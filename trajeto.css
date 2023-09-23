@@ -1,0 +1,63 @@
+/* Reset de estilos padrão do navegador */
+body, h1, img, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Organiza as fotos em 3 colunas */
+    gap: 20px; /* Espaço entre as fotos */
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s; /* Adiciona uma transição de animação suave */
+}
+
+.photo:hover img {
+    transform: scale(1.1); /* Aumenta a escala da imagem ao passar o mouse */
+}
+
+.photo-caption {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0; /* Inicialmente, a legenda está oculta */
+    transition: opacity 0.3s; /* Adiciona uma transição suave para a legenda */
+}
+
+.photo:hover .photo-caption {
+    opacity: 1; /* Mostra a legenda ao passar o mouse na foto */
+}

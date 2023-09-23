@@ -1,0 +1,55 @@
+/* Reset de estilos padrão do navegador */
+body, h1, img, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #FFE2D6; /* Cor de fundo inspirada na capa do álbum Lover */
+    color: #333; /* Cor do texto principal */
+}
+
+header {
+    background-color: #D6B1A0; /* Cor de destaque do cabeçalho */
+    color: #fff; /* Cor do texto no cabeçalho */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.photo {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-caption {
+    background-color: #A93F55; /* Cor de destaque para a legenda da foto */
+    color: #fff; /* Cor do texto na legenda da foto */
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
